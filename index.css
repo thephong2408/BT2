@@ -228,6 +228,14 @@ i {
   height: 28px;
 }
 @media screen and (max-width: 992px) {
+  .gird__card:nth-last-child(1),
+  .gird__card:nth-last-child(2),
+  .gird__card:nth-last-child(3),
+  .gird__card:nth-last-child(4),
+  .gird__card:nth-last-child(5),
+  .gird__card:nth-last-child(6) {
+    display: none;
+  }
   .footer__icon {
     height: 18px;
   }
@@ -264,9 +272,7 @@ i {
     flex-direction: column;
     align-items: center;
     padding-top: 52px;
-    padding-bottom: 82px;
     width: 375px;
-    height: 4275px;
     gap: 0px;
     opacity: 0px;
   }
