@@ -9,8 +9,6 @@ html {
 }
 body {
   overflow-y: overlay;
-
-  font-family: Helvetica, serif;
 }
 
 html ::-webkit-scrollbar {
