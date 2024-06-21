@@ -247,6 +247,14 @@ i {
   .gird__card:nth-last-child(6) {
     display: none;
   }
+
+  .gird__card:nth-last-child(7) {
+    margin-bottom: 82px;
+  }
+
+  .gird__card {
+    margin-bottom: 42px;
+  }
   .footer__icon {
     height: 18px;
   }
