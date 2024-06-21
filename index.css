@@ -1,3 +1,9 @@
+body,
+html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -9,6 +15,8 @@ html {
 }
 body {
   overflow-y: overlay;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 html ::-webkit-scrollbar {
@@ -71,19 +79,15 @@ i {
   cursor: pointer;
 }
 
-.Wrapper {
+.wrapper {
+  width: 100vw;
+}
+.app {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #82a796;
-  padding-block: 2rem;
 }
 
-.header {
-  height: 134px;
-  gap: 0px;
-  opacity: 0px;
-}
 .body {
   display: flex;
   flex-direction: column;
@@ -94,16 +98,15 @@ i {
 .body__title {
   width: 858px;
   height: 162px;
-  gap: 0px;
-  opacity: 0px;
   margin-top: 44px;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 54px;
+  font-family: "New York Extra Large", sans-serif;
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
-  font-size: 54px;
-  font-weight: 700;
-  line-height: 54px;
 }
 .body__title1 {
   margin-top: 32px;
@@ -120,11 +123,8 @@ i {
 .name {
   margin-top: 64px;
   margin-bottom: 39px;
-  width: 225px;
   height: 53px;
-  gap: 0px;
-  opacity: 0px;
-  font-family: New York Extra Large;
+  font-family: "New York Extra Large", sans-serif;
   font-size: 44px;
   font-weight: 700;
   line-height: 52.51px;
@@ -151,15 +151,15 @@ i {
 }
 .gird__card--text {
   display: inline-block;
-  width: 280px;
-  min-height: 78px;
+  width: 262px;
   gap: 0px;
+  min-height: 52px;
   opacity: 0px;
-  font-family: "SF Mono", sans-serif;
   font-size: 22px;
   font-weight: 500;
   line-height: 26.4px;
   text-align: center;
+  font-family: "SF Pro Display", sans-serif;
 }
 .footer {
   padding-top: 18px;
@@ -172,9 +172,12 @@ i {
   flex-direction: column;
   align-items: center;
 }
+.logo__footer {
+  height: 28px;
+}
 .text1 {
   width: 488px;
-  height: 71px;
+
   margin-top: 25.58px;
   gap: 0px;
   opacity: 0px;
@@ -187,7 +190,6 @@ i {
 }
 .text2 {
   width: 178px;
-  height: 34px;
   gap: 0px;
   opacity: 0px;
   font-family: "SF Mono", sans-serif;
@@ -196,10 +198,10 @@ i {
   line-height: 16.8px;
   text-align: center;
   color: #fff;
-  margin-top: 64px;
+  margin-top: 32px;
 }
 .text3 {
-  margin-top: 105.12px;
+  margin-top: 103.12px;
   width: 292px;
   height: 28px;
 }
@@ -226,6 +228,17 @@ i {
   height: 28px;
 }
 @media screen and (max-width: 992px) {
+  .logo__footer {
+    height: 18px;
+  }
+  .gird__card--img {
+    width: 335px;
+    height: 194px;
+    margin-bottom: 20px;
+  }
+  .wrapper {
+    width: 375px;
+  }
   .gird__card:nth-last-child(1),
   .gird__card:nth-last-child(2),
   .gird__card:nth-last-child(3),
@@ -283,7 +296,7 @@ i {
     height: 172px;
     gap: 0px;
     opacity: 0px;
-    font-family: New York Extra Large;
+    font-family: ".body__title";
     font-size: 36px;
     font-weight: 700;
     line-height: 42.96px;
@@ -314,7 +327,6 @@ i {
   }
   .text1 {
     width: 287px;
-    height: 71px;
     top: 3053px;
     left: 44px;
     gap: 0px;
